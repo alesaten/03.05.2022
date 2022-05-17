@@ -52,7 +52,7 @@
             this.ListViewForm_button.Name = "ListViewForm_button";
             this.ListViewForm_button.Size = new System.Drawing.Size(177, 23);
             this.ListViewForm_button.TabIndex = 1;
-            this.ListViewForm_button.Text = "ListView";
+            this.ListViewForm_button.Text = "Страны";
             this.ListViewForm_button.UseVisualStyleBackColor = true;
             // 
             // TreeViewForm_button

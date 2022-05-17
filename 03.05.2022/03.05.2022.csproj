@@ -72,6 +72,9 @@
     <Compile Include="TreeViewForm.Designer.cs">
       <DependentUpon>TreeViewForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="DateTimeMonthCalendarForm.resx">
+      <DependentUpon>DateTimeMonthCalendarForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
