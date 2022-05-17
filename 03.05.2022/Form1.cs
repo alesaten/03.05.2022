@@ -12,14 +12,16 @@ namespace _03._05._2022
 {
     public partial class Form1 : Form
     {
-        public int ProgressBarValue { get; set; }
-
         public Form1()
         {
             InitializeComponent();
 
             MainForm_timer.Interval = 200;
-            
+            MainForm_progressBar.Minimum = 0;
+            MainForm_progressBar.Maximum = 100;
+            MainForm_progressBar.Value = 0;
+
+
             ListViewForm_button.Click += ListViewForm_button_Click;
             TreeViewForm_button.Click += TreeViewForm_button_Click;
             DateTimeMonthCalendar_button.Click += DateTimeMonthCalendar_button_Click;
@@ -28,35 +30,51 @@ namespace _03._05._2022
 
         void MainForm_timer_Tick(object sender, EventArgs e)
         {
-            MainForm_progressBar.PerformStep();
-            ProgressBarValue = MainForm_progressBar.Value;
+            do
+                MainForm_progressBar.PerformStep();
+            while (MainForm_progressBar.Value < 100);
         }
 
         void ListViewForm_button_Click(object sender, EventArgs e)
         {
-            //MainForm_timer.Start();
+            MainForm_timer.Start();
+            MainForm_timer_Tick(sender, e);
 
-            ListViewForm ListView = new ListViewForm();
-            ListView.Show();
-
-            //if (ProgressBarValue == 100)
+            if (MainForm_progressBar.Value == 100)
             {
-                
+                ListViewForm ListView = new ListViewForm();
+                ListView.Show();
             }
 
-           //MainForm_progressBar.Value = 0;
+            MainForm_progressBar.Value = 0;
         }
 
         void TreeViewForm_button_Click(object sender, EventArgs e)
         {
-            TreeViewForm TreeView = new TreeViewForm();
-            TreeView.Show();
+            MainForm_timer.Start();
+            MainForm_timer_Tick(sender, e);
+
+            if (MainForm_progressBar.Value == 100)
+            {
+                TreeViewForm TreeView = new TreeViewForm();
+                TreeView.Show();
+            }
+
+            MainForm_progressBar.Value = 0;
         }
 
         void DateTimeMonthCalendar_button_Click(object sender, EventArgs e)
         {
-            DateTimeMonthCalendarForm DateTimeMonthCalendar = new DateTimeMonthCalendarForm();
-            DateTimeMonthCalendar.Show();
+            MainForm_timer.Start();
+            MainForm_timer_Tick(sender, e);
+
+            if (MainForm_progressBar.Value == 100)
+            {
+                DateTimeMonthCalendarForm DateTimeMonthCalendar = new DateTimeMonthCalendarForm();
+                DateTimeMonthCalendar.Show();
+            }
+
+            MainForm_progressBar.Value = 0;
         }
     }
 }

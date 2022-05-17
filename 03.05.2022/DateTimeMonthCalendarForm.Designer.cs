@@ -30,23 +30,23 @@
         {
             this.dateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.DateTimePicker_panel = new System.Windows.Forms.Panel();
+            this.ChosenDate_label = new System.Windows.Forms.Label();
+            this.TimeFormat_radioButton = new System.Windows.Forms.RadioButton();
+            this.ShortFormat_radioButton = new System.Windows.Forms.RadioButton();
+            this.LongFormat_radioButton = new System.Windows.Forms.RadioButton();
+            this.ChoiceFormat_label = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.DateTimePicker_radioButton = new System.Windows.Forms.RadioButton();
             this.MonthCalendar_radioButton = new System.Windows.Forms.RadioButton();
             this.MonthCalendar_panel = new System.Windows.Forms.Panel();
-            this.Calendar = new System.Windows.Forms.MonthCalendar();
-            this.BoldDateDay_label = new System.Windows.Forms.Label();
-            this.BoldDate_button = new System.Windows.Forms.Button();
-            this.BoldDateDay_textBox = new System.Windows.Forms.TextBox();
-            this.BoldDateMonth_label = new System.Windows.Forms.Label();
-            this.BoldDateYear_label = new System.Windows.Forms.Label();
-            this.BoldDateMonth_textBox = new System.Windows.Forms.TextBox();
             this.BoldDateYear_textBox = new System.Windows.Forms.TextBox();
-            this.ChoiceFormat_label = new System.Windows.Forms.Label();
-            this.LongFormat_radioButton = new System.Windows.Forms.RadioButton();
-            this.ShortFormat_radioButton = new System.Windows.Forms.RadioButton();
-            this.TimeFormat_radioButton = new System.Windows.Forms.RadioButton();
-            this.ChosenDate_label = new System.Windows.Forms.Label();
+            this.BoldDateMonth_textBox = new System.Windows.Forms.TextBox();
+            this.BoldDateYear_label = new System.Windows.Forms.Label();
+            this.BoldDateMonth_label = new System.Windows.Forms.Label();
+            this.BoldDateDay_textBox = new System.Windows.Forms.TextBox();
+            this.BoldDate_button = new System.Windows.Forms.Button();
+            this.BoldDateDay_label = new System.Windows.Forms.Label();
+            this.Calendar = new System.Windows.Forms.MonthCalendar();
             this.DateTimePicker_panel.SuspendLayout();
             this.MonthCalendar_panel.SuspendLayout();
             this.SuspendLayout();
@@ -71,6 +71,56 @@
             this.DateTimePicker_panel.Name = "DateTimePicker_panel";
             this.DateTimePicker_panel.Size = new System.Drawing.Size(174, 359);
             this.DateTimePicker_panel.TabIndex = 1;
+            // 
+            // ChosenDate_label
+            // 
+            this.ChosenDate_label.AutoSize = true;
+            this.ChosenDate_label.Location = new System.Drawing.Point(9, 332);
+            this.ChosenDate_label.Name = "ChosenDate_label";
+            this.ChosenDate_label.Size = new System.Drawing.Size(0, 13);
+            this.ChosenDate_label.TabIndex = 5;
+            // 
+            // TimeFormat_radioButton
+            // 
+            this.TimeFormat_radioButton.AutoSize = true;
+            this.TimeFormat_radioButton.Location = new System.Drawing.Point(12, 249);
+            this.TimeFormat_radioButton.Name = "TimeFormat_radioButton";
+            this.TimeFormat_radioButton.Size = new System.Drawing.Size(58, 17);
+            this.TimeFormat_radioButton.TabIndex = 4;
+            this.TimeFormat_radioButton.TabStop = true;
+            this.TimeFormat_radioButton.Text = "Время";
+            this.TimeFormat_radioButton.UseVisualStyleBackColor = true;
+            // 
+            // ShortFormat_radioButton
+            // 
+            this.ShortFormat_radioButton.AutoSize = true;
+            this.ShortFormat_radioButton.Location = new System.Drawing.Point(12, 228);
+            this.ShortFormat_radioButton.Name = "ShortFormat_radioButton";
+            this.ShortFormat_radioButton.Size = new System.Drawing.Size(121, 17);
+            this.ShortFormat_radioButton.TabIndex = 3;
+            this.ShortFormat_radioButton.TabStop = true;
+            this.ShortFormat_radioButton.Text = "Сокращённая дата";
+            this.ShortFormat_radioButton.UseVisualStyleBackColor = true;
+            // 
+            // LongFormat_radioButton
+            // 
+            this.LongFormat_radioButton.AutoSize = true;
+            this.LongFormat_radioButton.Location = new System.Drawing.Point(12, 209);
+            this.LongFormat_radioButton.Name = "LongFormat_radioButton";
+            this.LongFormat_radioButton.Size = new System.Drawing.Size(89, 17);
+            this.LongFormat_radioButton.TabIndex = 2;
+            this.LongFormat_radioButton.TabStop = true;
+            this.LongFormat_radioButton.Text = "Полная дата";
+            this.LongFormat_radioButton.UseVisualStyleBackColor = true;
+            // 
+            // ChoiceFormat_label
+            // 
+            this.ChoiceFormat_label.AutoSize = true;
+            this.ChoiceFormat_label.Location = new System.Drawing.Point(9, 193);
+            this.ChoiceFormat_label.Name = "ChoiceFormat_label";
+            this.ChoiceFormat_label.Size = new System.Drawing.Size(102, 13);
+            this.ChoiceFormat_label.TabIndex = 1;
+            this.ChoiceFormat_label.Text = "Выберите формат:";
             // 
             // label1
             // 
@@ -118,45 +168,19 @@
             this.MonthCalendar_panel.Size = new System.Drawing.Size(184, 359);
             this.MonthCalendar_panel.TabIndex = 5;
             // 
-            // Calendar
+            // BoldDateYear_textBox
             // 
-            this.Calendar.Location = new System.Drawing.Point(9, 9);
-            this.Calendar.Name = "Calendar";
-            this.Calendar.TabIndex = 0;
+            this.BoldDateYear_textBox.Location = new System.Drawing.Point(9, 287);
+            this.BoldDateYear_textBox.Name = "BoldDateYear_textBox";
+            this.BoldDateYear_textBox.Size = new System.Drawing.Size(164, 20);
+            this.BoldDateYear_textBox.TabIndex = 7;
             // 
-            // BoldDateDay_label
+            // BoldDateMonth_textBox
             // 
-            this.BoldDateDay_label.AutoSize = true;
-            this.BoldDateDay_label.Location = new System.Drawing.Point(6, 193);
-            this.BoldDateDay_label.Name = "BoldDateDay_label";
-            this.BoldDateDay_label.Size = new System.Drawing.Size(79, 13);
-            this.BoldDateDay_label.TabIndex = 1;
-            this.BoldDateDay_label.Text = "Введите день:";
-            // 
-            // BoldDate_button
-            // 
-            this.BoldDate_button.Location = new System.Drawing.Point(9, 327);
-            this.BoldDate_button.Name = "BoldDate_button";
-            this.BoldDate_button.Size = new System.Drawing.Size(164, 23);
-            this.BoldDate_button.TabIndex = 2;
-            this.BoldDate_button.Text = "Выделить";
-            this.BoldDate_button.UseVisualStyleBackColor = true;
-            // 
-            // BoldDateDay_textBox
-            // 
-            this.BoldDateDay_textBox.Location = new System.Drawing.Point(9, 209);
-            this.BoldDateDay_textBox.Name = "BoldDateDay_textBox";
-            this.BoldDateDay_textBox.Size = new System.Drawing.Size(164, 20);
-            this.BoldDateDay_textBox.TabIndex = 3;
-            // 
-            // BoldDateMonth_label
-            // 
-            this.BoldDateMonth_label.AutoSize = true;
-            this.BoldDateMonth_label.Location = new System.Drawing.Point(6, 232);
-            this.BoldDateMonth_label.Name = "BoldDateMonth_label";
-            this.BoldDateMonth_label.Size = new System.Drawing.Size(87, 13);
-            this.BoldDateMonth_label.TabIndex = 4;
-            this.BoldDateMonth_label.Text = "Введите месяц:";
+            this.BoldDateMonth_textBox.Location = new System.Drawing.Point(9, 248);
+            this.BoldDateMonth_textBox.Name = "BoldDateMonth_textBox";
+            this.BoldDateMonth_textBox.Size = new System.Drawing.Size(164, 20);
+            this.BoldDateMonth_textBox.TabIndex = 6;
             // 
             // BoldDateYear_label
             // 
@@ -167,69 +191,45 @@
             this.BoldDateYear_label.TabIndex = 5;
             this.BoldDateYear_label.Text = "Введите год:";
             // 
-            // BoldDateMonth_textBox
+            // BoldDateMonth_label
             // 
-            this.BoldDateMonth_textBox.Location = new System.Drawing.Point(9, 248);
-            this.BoldDateMonth_textBox.Name = "BoldDateMonth_textBox";
-            this.BoldDateMonth_textBox.Size = new System.Drawing.Size(164, 20);
-            this.BoldDateMonth_textBox.TabIndex = 6;
+            this.BoldDateMonth_label.AutoSize = true;
+            this.BoldDateMonth_label.Location = new System.Drawing.Point(6, 232);
+            this.BoldDateMonth_label.Name = "BoldDateMonth_label";
+            this.BoldDateMonth_label.Size = new System.Drawing.Size(87, 13);
+            this.BoldDateMonth_label.TabIndex = 4;
+            this.BoldDateMonth_label.Text = "Введите месяц:";
             // 
-            // BoldDateYear_textBox
+            // BoldDateDay_textBox
             // 
-            this.BoldDateYear_textBox.Location = new System.Drawing.Point(9, 287);
-            this.BoldDateYear_textBox.Name = "BoldDateYear_textBox";
-            this.BoldDateYear_textBox.Size = new System.Drawing.Size(164, 20);
-            this.BoldDateYear_textBox.TabIndex = 7;
+            this.BoldDateDay_textBox.Location = new System.Drawing.Point(9, 209);
+            this.BoldDateDay_textBox.Name = "BoldDateDay_textBox";
+            this.BoldDateDay_textBox.Size = new System.Drawing.Size(164, 20);
+            this.BoldDateDay_textBox.TabIndex = 3;
             // 
-            // ChoiceFormat_label
+            // BoldDate_button
             // 
-            this.ChoiceFormat_label.AutoSize = true;
-            this.ChoiceFormat_label.Location = new System.Drawing.Point(9, 193);
-            this.ChoiceFormat_label.Name = "ChoiceFormat_label";
-            this.ChoiceFormat_label.Size = new System.Drawing.Size(102, 13);
-            this.ChoiceFormat_label.TabIndex = 1;
-            this.ChoiceFormat_label.Text = "Выберите формат:";
+            this.BoldDate_button.Location = new System.Drawing.Point(9, 327);
+            this.BoldDate_button.Name = "BoldDate_button";
+            this.BoldDate_button.Size = new System.Drawing.Size(164, 23);
+            this.BoldDate_button.TabIndex = 2;
+            this.BoldDate_button.Text = "Выделить";
+            this.BoldDate_button.UseVisualStyleBackColor = true;
             // 
-            // LongFormat_radioButton
+            // BoldDateDay_label
             // 
-            this.LongFormat_radioButton.AutoSize = true;
-            this.LongFormat_radioButton.Location = new System.Drawing.Point(12, 209);
-            this.LongFormat_radioButton.Name = "LongFormat_radioButton";
-            this.LongFormat_radioButton.Size = new System.Drawing.Size(89, 17);
-            this.LongFormat_radioButton.TabIndex = 2;
-            this.LongFormat_radioButton.TabStop = true;
-            this.LongFormat_radioButton.Text = "Полная дата";
-            this.LongFormat_radioButton.UseVisualStyleBackColor = true;
+            this.BoldDateDay_label.AutoSize = true;
+            this.BoldDateDay_label.Location = new System.Drawing.Point(6, 193);
+            this.BoldDateDay_label.Name = "BoldDateDay_label";
+            this.BoldDateDay_label.Size = new System.Drawing.Size(79, 13);
+            this.BoldDateDay_label.TabIndex = 1;
+            this.BoldDateDay_label.Text = "Введите день:";
             // 
-            // ShortFormat_radioButton
+            // Calendar
             // 
-            this.ShortFormat_radioButton.AutoSize = true;
-            this.ShortFormat_radioButton.Location = new System.Drawing.Point(12, 228);
-            this.ShortFormat_radioButton.Name = "ShortFormat_radioButton";
-            this.ShortFormat_radioButton.Size = new System.Drawing.Size(121, 17);
-            this.ShortFormat_radioButton.TabIndex = 3;
-            this.ShortFormat_radioButton.TabStop = true;
-            this.ShortFormat_radioButton.Text = "Сокращённая дата";
-            this.ShortFormat_radioButton.UseVisualStyleBackColor = true;
-            // 
-            // TimeFormat_radioButton
-            // 
-            this.TimeFormat_radioButton.AutoSize = true;
-            this.TimeFormat_radioButton.Location = new System.Drawing.Point(12, 249);
-            this.TimeFormat_radioButton.Name = "TimeFormat_radioButton";
-            this.TimeFormat_radioButton.Size = new System.Drawing.Size(58, 17);
-            this.TimeFormat_radioButton.TabIndex = 4;
-            this.TimeFormat_radioButton.TabStop = true;
-            this.TimeFormat_radioButton.Text = "Время";
-            this.TimeFormat_radioButton.UseVisualStyleBackColor = true;
-            // 
-            // ChosenDate_label
-            // 
-            this.ChosenDate_label.AutoSize = true;
-            this.ChosenDate_label.Location = new System.Drawing.Point(9, 332);
-            this.ChosenDate_label.Name = "ChosenDate_label";
-            this.ChosenDate_label.Size = new System.Drawing.Size(0, 13);
-            this.ChosenDate_label.TabIndex = 5;
+            this.Calendar.Location = new System.Drawing.Point(9, 9);
+            this.Calendar.Name = "Calendar";
+            this.Calendar.TabIndex = 0;
             // 
             // DateTimeMonthCalendarForm
             // 
@@ -242,7 +242,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.DateTimePicker_panel);
             this.Name = "DateTimeMonthCalendarForm";
-            this.Text = "DateTimeMonthCalendarForm";
+            this.Text = "Работа с датами";
             this.DateTimePicker_panel.ResumeLayout(false);
             this.DateTimePicker_panel.PerformLayout();
             this.MonthCalendar_panel.ResumeLayout(false);
