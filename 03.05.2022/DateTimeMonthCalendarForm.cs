@@ -42,11 +42,22 @@ namespace _03._05._2022
 
         void BoldDate_button_Click(object sender, EventArgs e)
         {
-            int BoldDateDay_textBoxValue = Convert.ToInt32(BoldDateDay_textBox.Text);
-            int BoldDateMonth_textBoxValue = Convert.ToInt32(BoldDateMonth_textBox.Text);
-            int BoldDateYear_textBoxValue = Convert.ToInt32(BoldDateYear_textBox.Text);
+            try
+            {
+                int BoldDateDay_textBoxValue = Convert.ToInt32(BoldDateDay_textBox.Text);
+                int BoldDateMonth_textBoxValue = Convert.ToInt32(BoldDateMonth_textBox.Text);
+                int BoldDateYear_textBoxValue = Convert.ToInt32(BoldDateYear_textBox.Text);
 
-            Calendar.AddBoldedDate(new DateTime(BoldDateYear_textBoxValue, BoldDateMonth_textBoxValue, BoldDateDay_textBoxValue));
+                Calendar.AddBoldedDate(new DateTime(BoldDateYear_textBoxValue, BoldDateMonth_textBoxValue, BoldDateDay_textBoxValue));
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show("Вводите только целые числа!", "Предупреждение");
+            }
+            catch (ArgumentOutOfRangeException)
+            {
+                MessageBox.Show("0", "Предупреждение");
+            }
         }
 
         void LongFormat_radioButton_CheckedChanged(object sender, EventArgs e)
