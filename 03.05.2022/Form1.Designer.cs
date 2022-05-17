@@ -61,7 +61,7 @@
             this.TreeViewForm_button.Name = "TreeViewForm_button";
             this.TreeViewForm_button.Size = new System.Drawing.Size(177, 23);
             this.TreeViewForm_button.TabIndex = 2;
-            this.TreeViewForm_button.Text = "TreeView";
+            this.TreeViewForm_button.Text = "Континенты";
             this.TreeViewForm_button.UseVisualStyleBackColor = true;
             // 
             // MainForm_progressBar
